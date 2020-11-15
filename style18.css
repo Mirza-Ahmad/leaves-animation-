@@ -1,0 +1,146 @@
+body
+{
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+section
+{
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	background: radial-gradient(#333, #000);
+	animation: animate1 4s linear infinite;
+}
+.set
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+.set div
+{
+	display: block;
+	position: absolute;
+
+}
+.set div:nth-child(1)
+{
+	left: 20%;
+	animation: animate 15s linear infinite;
+	animation-delay: -7s;
+}
+.set div:nth-child(2)
+{
+	left: 50%;
+	animation: animate 17s linear infinite;
+	animation-delay: -5s;
+}
+.set div:nth-child(3)
+{
+	left: 70%;
+	animation: animate 25s linear infinite;
+}
+.set div:nth-child(4)
+{
+	left: 0%;
+	animation: animate 15s linear infinite;
+	animation-delay: -5s;
+}
+
+.set div:nth-child(5)
+{
+	left: 85%;
+	animation: animate 18s linear infinite;
+	animation-delay: -10s;
+}
+.set div:nth-child(6)
+{
+	left: 0%;
+	animation: animate 12s linear infinite;
+}
+.set div:nth-child(7)
+{
+	left: 15%;
+	animation: animate 14s linear infinite;
+}
+.set div:nth-child(8)
+{
+	left: 60%;
+	animation: animate 15s linear infinite;
+}
+@keyframes animate{
+	0%
+	{
+		top: -10%;
+		opacity: 0;
+		transform: translateX(20px) rotate(0deg);
+	}
+	10%
+	{
+		opacity: 1;
+	}
+	20%
+	{
+		transform: translateX(-20px) rotate(45deg);
+	}
+	40%
+	{
+		transform: translateX(-20px) rotate(90deg);
+	}
+	60%
+	{
+		transform: translateX(20px) rotate(135deg);
+	}
+	80%
+	{
+		transform: translateX(-20px) rotate(180deg);
+	}
+	100%
+	{
+		top: 110%;
+		transform: translateX(-20px) rotate(225deg);
+	}
+}
+.set2
+{
+	transform: scale(1) rotateY(180deg);
+	filter: blur(0.5px);
+}
+.set3{
+	transform: scale(0.8) rotateX(180deg);
+	filter: blur(4px);
+}
+@keyframes animate1
+{
+	0%
+	{
+		background: radial-gradient(#380,#000);
+	}
+	10%
+	{
+		background: radial-gradient(darkolivegreen,red,blue);
+	}
+	20%
+	{
+		background: radial-gradient(orange,olive,darkgray);
+	}
+	40%
+	{
+		background: radial-gradient(green,pink,lightpink);
+	}
+	60%
+	{
+		background: radial-gradient(silver,gold,brown);
+	}
+	80%
+	{
+		background: radial-gradient(red,blue,lightblue)
+	}
+	100%
+	{
+		background: radial-gradient(#678,#000);
+	}
+}
